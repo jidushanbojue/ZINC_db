@@ -109,7 +109,8 @@ def create_mol_supplier(infile):
     info_list = []
     df = pd.read_csv(infile, names=['smiles', 'name'], header=None)
     for idx, line in df.iterrows():
-        mol = Chem.MolFromSmiles(line['smiles'].split("'")[1])
+        # mol = Chem.MolFromSmiles(line['smiles'].split("'")[1])
+        mol = Chem.MolFromSmiles(line['smiles'])
         if mol:
             # yield Chem.MolToSmiles(mol), line['name']
             info_list.append(((Chem.MolToSmiles(mol), line['name'])))
