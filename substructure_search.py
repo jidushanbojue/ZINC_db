@@ -33,13 +33,13 @@ def parse_arguments():
     # smr_search_group.add_argument('--type', default='smarts')
 
 
-    args = parser.parse_args([
-        '-I', '/data/baiqing/PycharmProjects/ZINC_db/data/zinc_test.csv',
-        '-O', '/data/baiqing/PycharmProjects/ZINC_db/data/zinc_test_result.csv',
-        '-t', 'similarity',
-        '-tt', '0.4'
-    ])
-    # args = parser.parse_args()
+    # args = parser.parse_args([
+    #     '-I', '/data/baiqing/PycharmProjects/ZINC_db/data/zinc_test.csv',
+    #     '-O', '/data/baiqing/PycharmProjects/ZINC_db/data/zinc_test_result.csv',
+    #     '-t', 'similarity',
+    #     '-tt', '0.4'
+    # ])
+    args = parser.parse_args()
     return args
 
 
