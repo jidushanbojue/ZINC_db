@@ -2,6 +2,7 @@
 
 ## Create enviroment
 * conda create -f requirement.yml
+* pip install git+https://github.com/rdkit/django-rdkit.git
 
 * input_file contain two colunms "smiles" and 'names'
 ## substructure search for smiles (no stereochemistry)
