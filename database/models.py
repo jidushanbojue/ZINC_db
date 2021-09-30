@@ -8,6 +8,8 @@ from django.contrib.postgres.indexes import GistIndex
 class Compound(models.Model):
     zinc_name = models.CharField(max_length=200, blank=True, null=True)
     molecule = models.MolField(null=True)
+    inchi = models.CharField(max_length=500, blank=True, null=True)
+    inchikey = models.CharField(max_length=1000, blank=True, null=True)
 
     atom_count = models.IntegerField(null=True)
     bond_count = models.IntegerField(null=True)
